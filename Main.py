@@ -6,7 +6,7 @@ import pandas as pd
 import csv
 
 df = pd.read_csv(
-    "C:/Users/sraav_1jk4baa/OneDrive/Desktop/WhitehatJr Python/Projects/Single sample z-tests/Data.csv")
+    "Data.csv")
 
 data = df["reading_time"].tolist()
 
