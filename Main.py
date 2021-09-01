@@ -41,25 +41,25 @@ ReadingScore_third_std_deviation_start, ReadingScore_third_std_deviation_end = p
 
 fig = ff.create_distplot([meanList], ["Population"], show_hist=False)
 fig.add_trace(go.Scatter(x=[population_mean, population_mean], y=[
-    0, 0.8], mode="lines", name="Mean"))
+    0, 0.17], mode="lines", name="Mean"))
 
 fig.add_trace(go.Scatter(x=[ReadingScore_first_std_deviation_start, ReadingScore_first_std_deviation_start], y=[
-    0, 0.8], mode="lines", name="Start STD 1"))
+    0, 0.17], mode="lines", name="Start STD 1"))
 fig.add_trace(go.Scatter(x=[ReadingScore_first_std_deviation_end, ReadingScore_first_std_deviation_end], y=[
-    0, 0.8], mode="lines", name="End STD 1"))
+    0, 0.17], mode="lines", name="End STD 1"))
 
 fig.add_trace(go.Scatter(x=[ReadingScore_second_std_deviation_start, ReadingScore_second_std_deviation_start], y=[
-    0, 0.8], mode="lines", name="Start STD 2"))
+    0, 0.17], mode="lines", name="Start STD 2"))
 fig.add_trace(go.Scatter(x=[ReadingScore_second_std_deviation_end, ReadingScore_second_std_deviation_end], y=[
-    0, 0.8], mode="lines", name="End STD 2"))
+    0, 0.17], mode="lines", name="End STD 2"))
 
 fig.add_trace(go.Scatter(x=[ReadingScore_third_std_deviation_start, ReadingScore_third_std_deviation_start], y=[
-    0, 0.8], mode="lines", name="Start STD 3"))
+    0, 0.17], mode="lines", name="Start STD 3"))
 fig.add_trace(go.Scatter(x=[ReadingScore_third_std_deviation_end, ReadingScore_third_std_deviation_end], y=[
-    0, 0.8], mode="lines", name="End STD 3"))
+    0, 0.17], mode="lines", name="End STD 3"))
 
 fig.add_trace(go.Scatter(x=[SampleMean, SampleMean], y=[
-    0, 0.8], mode="lines", name="Sample 1 Mean"))
+    0, 0.17], mode="lines", name="Sample 1 Mean"))
 
 zScore = (SampleMean-population_mean) / ReadingScore_SD
 
